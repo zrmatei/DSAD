@@ -41,7 +41,6 @@ X_apply = standard.fit_transform(persoane_apply[['varsta', 'salariu']])
 
 # 3. Impartire date in set de antrenare/test - 70% antrenare, 30% testare
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3, random_state=42, stratify=Y)
-print(Y_train.value_counts(), Y_test.value_counts())
 
 # 4. Aplicare Analiza Discriminanta (LDA) - se face pe modelul de antrenare
 modelLDA = LinearDiscriminantAnalysis()
